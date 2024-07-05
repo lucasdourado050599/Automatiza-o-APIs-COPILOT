@@ -7,6 +7,8 @@ from urllib.parse import quote_plus
 #Colocar seu access token e sua enterprise
 access_token = '{seuaccesstoken}'
 url = "https://api.github.com/enterprises/{suaenterprise}/copilot/billing/seats"
+# Se tiver apenas organização utilizar orgs/{org}/copilot/billing
+#https://docs.github.com/en/rest/copilot/copilot-user-management?apiVersion=2022-11-28#list-all-copilot-seat-assignments-for-an-organization
 headers = {
     "Authorization": f"Bearer {access_token}"
 }
